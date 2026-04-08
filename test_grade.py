@@ -15,7 +15,13 @@ def test_calculate_gpa():
     assert calculate_gpa([40, 40, 40]) == 0.0
     print("calculate_gpa: ผ่านทุก test")
 
+# เพิ่มใน test_grade.py
+def test_weighted_gpa():
+    assert calculate_weighted_gpa([85, 75], [3, 1]) == 3.5
+    print("calculate_weighted_gpa: ผ่านทุก test")
+
 if __name__ == "__main__":
     test_calculate_grade()
     test_calculate_gpa()
     print("\n🎉 ผ่านทุก test!")
+
